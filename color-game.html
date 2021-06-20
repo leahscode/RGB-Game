@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>rgb color game</title>
+	<link rel="stylesheet" type="text/css" href="color-game.css">
+	<link rel="shortcut icon" href="/favicon.ico">
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript" src="color-game.js"></script>
+</head>
+<body>
+	<header id="header">
+		<h1 id="headerTest">
+			The Great
+			<!-- <br> -->
+			<span id="h1"></span>
+			<!-- <br> -->
+			Color Game
+		</h1>
+		<p id="rgbDemos" class="rgbHints">
+			<span>rgb(0, 0, 0)</span>&nbsp;&nbsp;
+			<span>rgb(0, 0, 255)</span>&nbsp;&nbsp;
+			<span>rgb(0, 255, 0)</span>&nbsp;&nbsp;
+			<span>rgb(255, 0, 0)</span>&nbsp;&nbsp;
+			<span>rgb(0, 255, 255)</span>&nbsp;&nbsp;
+			<span>rgb(255, 255, 0)</span>&nbsp;&nbsp;
+			<span>rgb(255, 0, 255)</span>&nbsp;&nbsp;
+			<span>rgb(255, 255, 255)</span>
+		</p>
+		<p id="rgbSpace" class="rgbHints">&nbsp;</p>
+	</header>
+	<nav>
+		<div class="line">
+			<div class="navElement">
+				<p>
+					<button id="newGame">NEW GAME</button>
+					<button id="hints">HINTS</button>
+					<button id="new">NEW COLORS</button>
+				</p>
+				<p id="info">background color is <br> rgb(230, 130, 130)</p>
+			</div>
+			<div class="navElement">
+				<br>
+				<p id="message"></p>
+			</div>
+			<div id="score" class="navElement">
+				<p>
+					Current Score: <span id="current"></span><br>
+					Total Score: <span id="totalScore"></span><br>
+					Average Score: <span id="average"></span><br>
+					Percent Correct: <span id="percent"></span>%<br>
+					Total Boards: <span id="totalBoards"></span><br>
+				</p>
+			</div>
+			<div class="navElement" id="levels">
+				<p>
+					<button class="levels" value="4" id="easy">EASY</button>
+					<button class="levels" value="8" id="medium">MEDIUM</button>
+					<button class="levels" value="12" id="hard">HARD</button>
+					<button class="levels" value="16" id="extreme">EXTREME</button>
+					<span id="customBlock">
+						<button class="levels" value="" id="custom">CUSTOM</button>
+						<input type="number" min="2" value="2" id="customNumber" name="">						
+					</span>
+				</p>
+			</div>
+			<div class="navElement" id="size">
+				<p>
+					<button class="size" id="small">SMALL</button>
+					<button class="size selected" id="med">MEDIUM</button>
+					<button class="size" id="large">LARGE</button>					
+				</p>
+			</div>
+		</div>
+	</nav>
+	<main>
+		<div class="container" id="container">
+			<div class="square med"></div>
+		</div>
+	</main>
+</body>
+</html>

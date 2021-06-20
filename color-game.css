@@ -1,0 +1,104 @@
+body {
+	margin: 0;
+	background: rgb(230, 130, 130);
+	text-align: center;
+	font-family: sans-serif;
+}
+header {
+	background: rgb(20, 200, 255);
+	padding: 5px 0 1px;
+	color: white;
+	text-transform: uppercase;
+	line-height: 1.1;
+}
+h1 {
+	font-weight: normal;
+}
+#h1 {
+	font-size: 2em;
+	display: block;
+}
+.line {
+	max-width: 750px;
+	margin: 0 auto;
+	display: flex;
+}
+nav {
+	background: white;
+}
+button {
+	color: rgb(20, 200, 255);
+	font-weight: bold;
+	background: none;
+	border: none;
+	display: block;
+	margin: auto;
+	outline: none;
+	transition: all 0.3s;
+}
+.selected {
+	color: white;
+	background: rgb(20,200,255);
+}
+button:focus, button:hover{
+	font-style: italic;
+	color: white;
+	background: rgb(20,200,255);
+}
+.navElement {
+	width: 18%;
+	min-height: 1.3em;
+	float: left;
+	border-left: 1px dotted rgb(20,200,255);
+}
+#size {
+	border-right: 1px dotted rgb(20,200,255);
+}
+#score {
+	width: 28%;
+}
+.square {
+	float: left;
+	margin: 1.5%;
+	border-radius: 20%;
+	transition: background 0.5s;
+	background: white;
+}
+.container {
+	max-width: 650px;
+	margin: 15px auto;
+}
+
+.small{
+padding-bottom: 8%;
+width: 13.666%;
+border-radius: 6%
+}
+.med{
+padding-bottom: 17%;
+width: 22%;
+}
+.large{
+padding-bottom: 24%;
+width: 30.333%;
+}
+#info{
+	font-size: 50%;
+}
+#customNumber{
+	margin: auto;
+	width: 17%;
+	max-width: 112px;
+	display: none;
+}
+#customBlock:hover input, #customBlock:focus input{
+	display: block;
+	position: absolute;
+}
+.rgbToggle {
+	display: none;
+}
+#message{
+	font-family: cursive;
+	font-size: 150%;
+}
